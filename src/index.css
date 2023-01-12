@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logos:hover {
+  transition: all 0.2s ease-in;
+  filter: drop-shadow(0 0 1.5rem #a166ff);
+}
+
+.mini-logos:hover h1 span {
+  transition: all 0.2s ease-in;
+  filter: drop-shadow(0 0 12px #a166ff);
+}
+
+.disabled:disabled {
+  cursor: not-allowed;
+  opacity: .8;
+}
+
+.lists {
+  list-style: disc;
+}
