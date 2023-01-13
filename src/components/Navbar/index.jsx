@@ -8,11 +8,11 @@ export default function Navbar() {
   return (
     <nav className="bg-tertiary-300 relative">
       <div className="container mx-auto">
-        <div className="h-16 md:h-20 p-5 md:py-6 lg:px-0 flex items-center justify-between z-10 bg-tertiary-300 relative">
+        <div className="h-16 md:h-20 p-5 md:py-6 lg:px-0 flex items-center justify-between z-20 bg-tertiary-300 relative">
           {/* Icon */}
           <a href="#">
             <img
-              className="w-[124px] h-9 lg:w-[150px] lg:h-[42px] object-cover z-10 relative"
+              className="w-[124px] h-9 lg:w-[150px] lg:h-[42px] object-cover z-20 relative"
               src="/shopify-header.png"
               alt="shopify-icon"
             />
@@ -23,7 +23,7 @@ export default function Navbar() {
             onClick={handleOpen}
             className={`${
               isOpen ? "open" : ""
-            } flex flex-col items-center w-fit gap-[7px] cursor-pointer md:hidden z-10`}
+            } flex flex-col items-center w-fit gap-[7px] cursor-pointer md:hidden z-20`}
           >
             <span className="transition-all duration-500 ease-in-out h-[2px] w-5 bg-black-500 rounded-full"></span>
             <span className="transition-all duration-500 ease-in-out h-[2px] w-4 bg-black-500 rounded-full"></span>
@@ -74,7 +74,7 @@ function NavbarDropdown({ isOpen }) {
     <div
       className={`${
         isOpen ? "translate-y-0" : "-translate-y-full"
-      } pt-[75.55px] md:hidden bg-tertiary-300 absolute top-0 left-0 w-full h-screen text-center transition-all duration-500 ease-in-out p-5`}
+      } pt-[75.55px] md:hidden bg-tertiary-300 absolute top-0 left-0 w-full h-screen text-center transition-all duration-500 ease-in-out p-5 z-10`}
     >
       <div className="flex flex-col gap-16 mt-16">
         <div className="flex flex-col gap-8 items-center text-black-200">
