@@ -2,21 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-.logos:hover {
-  transition: all 0.2s ease-in;
-  filter: drop-shadow(0 0 1.5rem #a166ff);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+span,
+a,
+button {
+  font-family: inherit;
 }
 
-.mini-logos:hover h1 span {
-  transition: all 0.2s ease-in;
-  filter: drop-shadow(0 0 12px #a166ff);
+/* navbar */
+.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6.5px, 6.5px);
 }
 
-.disabled:disabled {
-  cursor: not-allowed;
-  opacity: .8;
+.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
 }
 
-.lists {
-  list-style: disc;
+.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+.navlink {
+  @apply cursor-pointer hover:text-black-100 transition-all duration-200 ease-in;
+}
+
+.active-navlink {
+  @apply text-black-100;
+}
+
+.navbar-dropdown {
+  height: calc(100vh - 100%);
+}
+
+.chair-card {
+  box-shadow: 0px 2.19073px 13.1444px rgba(118, 81, 13, 0.12);
+}
+
+.sales-card {
+  box-shadow: 0px 3.83379px 13.1444px rgba(138, 107, 21, 0.07);
 }
