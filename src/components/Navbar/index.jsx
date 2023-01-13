@@ -8,11 +8,11 @@ export default function Navbar() {
   return (
     <nav className="bg-tertiary-300 relative">
       <div className="container mx-auto">
-        <div className="h-20 p-5 md:py-6 lg:px-0 flex items-center justify-between z-10 bg-tertiary-300 relative">
+        <div className="h-16 md:h-20 p-5 md:py-6 lg:px-0 flex items-center justify-between z-10 bg-tertiary-300 relative">
           {/* Icon */}
           <a href="#">
             <img
-              className="w-[124px] z-10 relative"
+              className="w-[124px] h-9 lg:w-[150px] lg:h-[42px] object-cover z-10 relative"
               src="/shopify-header.png"
               alt="shopify-icon"
             />
@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
 
           {/* Menu */}
-          <div className="hidden md:flex items-center md:gap-4 lg:gap-8 text-black-200 text-sm lg:text-lg">
+          <div className="hidden md:flex items-center md:gap-4 lg:gap-8 text-black-200 text-sm lg:text-base font-body">
             <a href="#" className="navlink active-navlink">
               Product
             </a>
@@ -50,12 +50,12 @@ export default function Navbar() {
           </div>
 
           {/* Button */}
-          <div className="hidden md:flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-lg">
+          <div className="hidden md:flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-base font-head font-medium">
             <a href="#">
               <p className="text-black-100 underline cursor-pointer">Login</p>
             </a>
             <a href="#">
-              <button className="text-white bg-primary-100 font-medium md:py-2.5 px-4 py-3.5 px-[25px]">
+              <button className="text-white bg-primary-100 md:py-2.5 px-4 py-3.5 px-[25px]">
                 Start free
               </button>
             </a>
