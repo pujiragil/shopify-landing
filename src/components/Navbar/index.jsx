@@ -6,60 +6,105 @@ export default function Navbar() {
   const handleOpen = () => setIsOpen((prev) => !prev);
 
   return (
-    <nav className="bg-tertiary-300">
-      <div className="container p-5 md:py-6 lg:px-0 mx-auto flex items-center justify-between">
-        {/* Icon */}
-        <a href="#">
-          <img
-            className="w-[125px]"
-            src="/shopify-header.png"
-            alt="shopify-icon"
-          />
-        </a>
+    <nav className="bg-tertiary-300 relative">
+      <div className="container mx-auto">
+        <div className="h-20 p-5 md:py-6 lg:px-0 flex items-center justify-between z-10 bg-tertiary-300 relative">
+          {/* Icon */}
+          <a href="#">
+            <img
+              className="w-[124px] z-10 relative"
+              src="/shopify-header.png"
+              alt="shopify-icon"
+            />
+          </a>
 
-        {/* Hamburger */}
-        <div
-          onClick={handleOpen}
-          className={`${
-            isOpen ? "open" : ""
-          } flex flex-col items-center w-fit gap-[7px] cursor-pointer md:hidden`}
-        >
-          <span className="transition-all duration-500 ease-in-out h-[2px] w-5 bg-black-500 rounded-full"></span>
-          <span className="transition-all duration-500 ease-in-out h-[2px] w-4 bg-black-500 rounded-full"></span>
-          <span className="transition-all duration-500 ease-in-out h-[2px] w-5 bg-black-500 rounded-full"></span>
+          {/* Hamburger */}
+          <div
+            onClick={handleOpen}
+            className={`${
+              isOpen ? "open" : ""
+            } flex flex-col items-center w-fit gap-[7px] cursor-pointer md:hidden z-10`}
+          >
+            <span className="transition-all duration-500 ease-in-out h-[2px] w-5 bg-black-500 rounded-full"></span>
+            <span className="transition-all duration-500 ease-in-out h-[2px] w-4 bg-black-500 rounded-full"></span>
+            <span className="transition-all duration-500 ease-in-out h-[2px] w-5 bg-black-500 rounded-full"></span>
+          </div>
+
+          {/* Menu */}
+          <div className="hidden md:flex items-center md:gap-4 lg:gap-8 text-black-200 text-sm lg:text-lg">
+            <a href="#" className="navlink active-navlink">
+              Product
+            </a>
+            <a href="#" className="navlink">
+              Solutions
+            </a>
+            <a href="#" className="navlink">
+              Pricing
+            </a>
+            <a href="#" className="navlink">
+              Resources
+            </a>
+            <a href="#" className="navlink">
+              Customers
+            </a>
+          </div>
+
+          {/* Button */}
+          <div className="hidden md:flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-lg">
+            <a href="#">
+              <p className="text-black-100 underline cursor-pointer">Login</p>
+            </a>
+            <a href="#">
+              <button className="text-white bg-primary-100 font-medium md:py-2.5 px-4 py-3.5 px-[25px]">
+                Start free
+              </button>
+            </a>
+          </div>
         </div>
 
-        {/* Menu */}
-        <div className="hidden md:flex items-center md:gap-4 lg:gap-8 text-black-200 text-sm lg:text-lg">
-          <a href="#" className="navlink active-navlink">
-            Product
+        {/* Navbar Menu (Mobile) */}
+        <NavbarDropdown isOpen={isOpen} />
+      </div>
+    </nav>
+  );
+}
+
+function NavbarDropdown({ isOpen }) {
+  return (
+    <div
+      className={`${
+        isOpen ? "translate-y-0" : "-translate-y-full"
+      } pt-[75.55px] md:hidden bg-tertiary-300 absolute top-0 left-0 w-full h-screen text-center transition-all duration-500 ease-in-out p-5`}
+    >
+      <div className="flex flex-col gap-16 mt-16">
+        <div className="flex flex-col gap-8 items-center text-black-200">
+          <a className="w-fit" href="#">
+            <p className="navlink active-navlink">Product</p>
           </a>
-          <a href="#" className="navlink">
-            Solutions
+          <a className="w-fit" href="#">
+            <p className="navlink">Solutions</p>
           </a>
-          <a href="#" className="navlink">
-            Pricing
+          <a className="w-fit" href="#">
+            <p className="navlink">Pricing</p>
           </a>
-          <a href="#" className="navlink">
-            Resources
+          <a className="w-fit" href="#">
+            <p className="navlink">Resources</p>
           </a>
-          <a href="#" className="navlink">
-            Customers
+          <a className="w-fit" href="#">
+            <p className="navlink">Customers</p>
           </a>
         </div>
-
-        {/* Button */}
-        <div className="flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-lg">
+        <div className="flex flex-col gap-8">
           <a href="#">
-            <p className="text-black-100 underline cursor-pointer">Login</p>
+            <p className="underline text-black-100 py-3.5 border border-black-100">
+              Login
+            </p>
           </a>
           <a href="#">
-            <button className="text-white bg-primary-100 font-medium md:py-2.5 px-4 py-3.5 px-[25px]">
-              Start free
-            </button>
+            <button className="py-3.5 border border-primary-100 w-full text-white bg-primary-100 font-medium">Start Free</button>
           </a>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
