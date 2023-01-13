@@ -1,9 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollPos, setScrollPos] = useState(0);
 
   const handleOpen = () => setIsOpen((prev) => !prev);
+
+  const handleScrollPos = () => {
+    const currentScrollPos = window.scrollY
+
+    if(currentScrollPos > scrollPos) {
+      setIsOpen(false)
+    } 
+    
+    setScrollPos(currentScrollPos)
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollPos)
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollPos)
+    }
+  }, [scrollPos]);
 
   return (
     <nav className="bg-tertiary-300 relative">
@@ -101,7 +120,9 @@ function NavbarDropdown({ isOpen }) {
             </p>
           </a>
           <a href="#">
-            <button className="py-3.5 border border-primary-100 w-full text-white bg-primary-100 font-medium">Start Free</button>
+            <button className="py-3.5 border border-primary-100 w-full text-white bg-primary-100 font-medium">
+              Start Free
+            </button>
           </a>
         </div>
       </div>
