@@ -26,6 +26,10 @@ module.exports = {
           300: "#FBF7EC"
         }
       },
+      fontFamily: {
+        "head": ["Plus Jakarta Sans", "sans-serif"],
+        "body": ["DM Sans", "sans-serif"]
+      }
     },
   },
   plugins: [],
