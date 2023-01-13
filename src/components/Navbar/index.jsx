@@ -7,13 +7,15 @@ export default function Navbar() {
 
   return (
     <nav className="bg-tertiary-300">
-      <div className="container p-5 mx-auto flex items-center justify-between">
+      <div className="container p-5 md:py-6 lg:px-0 mx-auto flex items-center justify-between">
         {/* Icon */}
-        <img
-          className="w-[125px]"
-          src="/shopify-header.png"
-          alt="shopify-icon"
-        />
+        <a href="#">
+          <img
+            className="w-[125px]"
+            src="/shopify-header.png"
+            alt="shopify-icon"
+          />
+        </a>
 
         {/* Hamburger */}
         <div
@@ -28,18 +30,34 @@ export default function Navbar() {
         </div>
 
         {/* Menu */}
-        <div className="hidden md:flex items-center gap-8 text-black-200">
-          <p className="text-black-100">Product</p>
-          <p>Solutions</p>
-          <p>Pricing</p>
-          <p>Resources</p>
-          <p>Customers</p>
+        <div className="hidden md:flex items-center md:gap-4 lg:gap-8 text-black-200 text-sm lg:text-lg">
+          <a href="#" className="navlink active-navlink">
+            Product
+          </a>
+          <a href="#" className="navlink">
+            Solutions
+          </a>
+          <a href="#" className="navlink">
+            Pricing
+          </a>
+          <a href="#" className="navlink">
+            Resources
+          </a>
+          <a href="#" className="navlink">
+            Customers
+          </a>
         </div>
 
         {/* Button */}
-        <div className="flex gap-[25px] items-center">
-          <p className="text-black-100 underline">Login</p>
-          <button className="text-white bg-primary-100 font-medium py-3.5 px-[25px]">Start free</button>
+        <div className="flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-lg">
+          <a href="#">
+            <p className="text-black-100 underline cursor-pointer">Login</p>
+          </a>
+          <a href="#">
+            <button className="text-white bg-primary-100 font-medium md:py-2.5 px-4 py-3.5 px-[25px]">
+              Start free
+            </button>
+          </a>
         </div>
       </div>
     </nav>
