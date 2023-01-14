@@ -4,17 +4,17 @@ export default function Hero() {
   return (
     <div className="container mx-auto max-w-[1344px] lg:px-6 lg:py-10">
       <div className="flex flex-col gap-[44px] p-5 py-6  min-h-screen h-auto justify-center md:p-0 lg:min-h-fit lg:items-center lg:flex-row lg:justify-between">
-        <div className="flex flex-col gap-8 lg:w-full lg:gap-[34px]">
-          <section className="flex flex-col gap-5 md:items-center text-center lg:text-left lg:gap-6 lg:items-start">
-            <h1 className="text-[42px] leading-[52px] md:text-5xl md:w-4/5 font-bold font-head text-primary-100 lg:text-6xl lg:leading-[70px]">
+        <div className="flex flex-col items-center gap-8 lg:w-full lg:gap-[34px]">
+          <section className="flex flex-col gap-5 sm:items-center text-center lg:text-left lg:gap-6 lg:items-start">
+            <h1 className="text-[42px] leading-[52px] sm:w-4/5 md:text-5xl md:w-4/5 font-bold font-head text-primary-100 lg:text-6xl lg:leading-[70px]">
               The platform commerce is built on.
             </h1>
-            <p className="text-lg font-body text-black-300 md:w-full lg:w-4/5">
+            <p className="text-lg font-body text-black-300 sm:w-4/5">
               Millions of the world's most successful brands trust Shopify to
               sell, ship and process payments anywhere.
             </p>
           </section>
-          <div className="flex flex-col md:flex-row justify-center gap-[18px] md:gap-[30px] lg:justify-start lg:w-4/5">
+          <div className="w-full flex flex-col sm:w-4/5 md:flex-row justify-center gap-[18px] md:gap-[30px] lg:justify-start lg:w-4/5">
             <MainButton primary={true}>admin demo</MainButton>
             <MainButton primary={false}>shop demo</MainButton>
           </div>
