@@ -2,7 +2,7 @@ import MainButton from "../Atoms/button";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto max-w-[1344px] px-6 lg:py-10">
+    <div className="container mx-auto max-w-[1344px] lg:px-6 lg:py-10">
       <div className="flex flex-col gap-[44px] p-5 pt-6  min-h-screen h-auto justify-center md:p-0 lg:min-h-fit lg:items-center lg:flex-row lg:justify-between">
         <div className="flex flex-col gap-8 lg:w-full lg:gap-[34px]">
           <section className="flex flex-col gap-5 md:items-center text-center lg:text-left lg:gap-6 lg:items-start">
