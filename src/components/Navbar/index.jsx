@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-tertiary-300 relative">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1344px] px-5">
         <div className="h-16 md:h-20 p-5 md:py-6 lg:px-0 flex items-center justify-between z-20 bg-tertiary-300 relative">
           {/* Icon */}
           <a href="#">
