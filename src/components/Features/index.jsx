@@ -51,21 +51,21 @@ export default function Features() {
 
   return (
     <div className="container mx-auto max-w-[1344px]">
-      <div className="px-5 py-16 flex flex-col gap-10">
+      <div className="px-5 py-16 flex flex-col gap-10 sm:pb-32 md:pb-36">
         {/* Head Content */}
-        <div className="text-center">
+        <div className="text-center flex flex-col items-center">
           <Subtitle style="mb-2">360° CUSTOMIZABLE</Subtitle>
-          <SubHead style="mb-[18px]">
+          <SubHead style="mb-[18px] sm:w-4/5 lg:w-7/12">
             Have full control over your online store
           </SubHead>
-          <Paragraph fontSize="text-sm" color="text-black-400">
+          <Paragraph fontSize="text-sm" color="text-black-400" style="sm:w-4/5">
             Take total control of your eCommerce business by owning the source
             code and data that drive it.
           </Paragraph>
         </div>
 
         {/* Feature Items */}
-        <div className="grid gap-6">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {dataFeatures?.map(feature => (
             <FeatureItem key={feature.id} feature={feature}/>
           ))}
