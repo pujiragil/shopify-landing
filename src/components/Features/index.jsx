@@ -51,14 +51,14 @@ export default function Features() {
 
   return (
     <div className="container mx-auto max-w-[1344px]">
-      <div className="px-5 py-16 flex flex-col gap-10 sm:pb-32 md:pb-36">
+      <div className="px-5 py-16 flex flex-col gap-10 sm:pb-28 md:pb-36">
         {/* Head Content */}
         <div className="text-center flex flex-col items-center">
           <Subtitle style="mb-2">360° CUSTOMIZABLE</Subtitle>
-          <SubHead style="mb-[18px] sm:w-4/5 lg:w-7/12">
+          <SubHead style="mb-[18px] sm:w-8/12 md:w-9/12 lg:w-7/12">
             Have full control over your online store
           </SubHead>
-          <Paragraph fontSize="text-sm" color="text-black-400" style="sm:w-4/5">
+          <Paragraph fontSize="text-sm" color="text-black-400" style="sm:w-3/5 md:w-7/12 lg:w-1/3">
             Take total control of your eCommerce business by owning the source
             code and data that drive it.
           </Paragraph>
