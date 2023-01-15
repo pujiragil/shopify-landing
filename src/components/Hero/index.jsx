@@ -23,16 +23,16 @@ export default function Hero() {
           <div className="relative w-fit">
             {/* main card */}
             <img
-              className="w-[355px] h-auto object-cover relative md:w-[723px]"
+              className="w-[355px] h-auto object-cover relative sm:w-[550px] md:w-[723px]"
               src="hero.png"
               alt="hero"
             />
 
             {/* chair card */}
-            <div className="absolute top-[43%] right-7 flex flex-col items-center gap-1.5 p-2 rounded chair-card bg-white text-[5.48px] font-body text-black-400 w-[98px] md:w-[200px] md:gap-3 md:text-xs md:p-4 md:rounded-md md:right-14">
+            <div className="absolute top-[43%] right-7 flex flex-col items-center gap-1.5 p-2 rounded chair-card bg-white text-[5.48px] font-body text-black-400 w-[98px] sm:w-[150px] sm:text-[10px] sm:gap-2.5 sm:right-11 md:w-[200px] md:gap-3 md:text-xs md:p-4 md:rounded-md md:right-14">
               <p>Your Store</p>
               <img
-                className="w-16 h-auto object-cover md:w-[133px]"
+                className="w-16 h-auto object-cover sm:w-24 md:w-[133px]"
                 src="/chair.png"
                 alt="chair"
               />
@@ -40,29 +40,29 @@ export default function Hero() {
                 <p>Modern Sofa</p>
                 <p className="text-[#515151] font-medium">$124.60</p>
               </div>
-              <button className="text-[#064A4A] bg-[#C7EBE8] rounded-full py-1 w-full md:py-2">
+              <button className="text-[#064A4A] bg-[#C7EBE8] rounded-full py-1 w-full sm:py-1.5 md:py-2">
                 Buy Now
               </button>
             </div>
 
             {/* total sales */}
-            <div className="absolute top-[28%] left-1 border-[0.5px] border-[#E2E2E2] rounded sales-card bg-white flex flex-col gap-2 font-body p-2 w-[96px] md:w-[196px] md:gap-4 md:border md:p-3.5">
+            <div className="absolute top-[28%] left-1 border-[0.5px] border-[#E2E2E2] rounded sales-card bg-white flex flex-col gap-2 font-body p-2 w-[96px] sm:w-[148px] sm:gap-3 sm:p-2.5 md:w-[196px] md:gap-4 md:border md:p-3.5">
               <div className="flex flex-col gap-0.5">
-                <h5 className="text-[#515151] text-[5.48px] font-medium md:text-xs">
+                <h5 className="text-[#515151] text-[5.48px] font-medium sm:text-[8px] md:text-xs">
                   TOTAL SALES
                 </h5>
                 <div className="w-full flex items-end justify-between">
-                  <h4 className="text-xs text-[#064A4A] font-bold md:text-2xl">
+                  <h4 className="text-xs text-[#064A4A] font-bold sm:text-lg md:text-2xl">
                     $218
                   </h4>
                   <img
-                    className="w-8 h-auto object-cover md:w-[65px]"
+                    className="w-8 h-auto object-cover sm:w-[52px] md:w-[65px]"
                     src="/chart.svg"
                     alt="chart"
                   />
                 </div>
               </div>
-              <div className="pt-1 border-t-[0.5px] border-[#C9C9C9] w-full flex items-center justify-between text-[#818181] text-[4.38px] md:pt-2 md:text-[9px]">
+              <div className="pt-1 border-t-[0.5px] border-[#C9C9C9] w-full flex items-center justify-between text-[#818181] text-[4.38px] sm:pt-1.5 sm:text-[6.5px] md:pt-2 md:text-[9px]">
                 <p>6 total orders</p>
                 <p>View report {">"}</p>
               </div>
