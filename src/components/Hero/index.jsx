@@ -2,9 +2,9 @@ import MainButton from "../Atoms/button";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto max-w-[1344px] lg:px-6 lg:py-10">
+    <div className="container mx-auto max-w-[1344px] lg:px-6 lg:pt-10 lg:pb-20">
       <div className="flex flex-col gap-[44px] p-5 py-6  min-h-screen h-auto justify-center md:p-0 lg:min-h-fit lg:items-center lg:flex-row lg:justify-between">
-        <div className="flex flex-col items-center gap-8 lg:w-full lg:gap-[34px]">
+        <div className="flex flex-col items-center lg:items-start gap-8 lg:w-full lg:gap-[34px]">
           <section className="flex flex-col gap-5 sm:items-center text-center lg:text-left lg:gap-6 lg:items-start">
             <h1 className="text-[42px] leading-[52px] sm:w-4/5 md:text-5xl md:w-4/5 font-bold font-head text-primary-100 lg:text-6xl lg:leading-[70px]">
               The platform commerce is built on.
