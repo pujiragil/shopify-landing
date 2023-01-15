@@ -51,7 +51,7 @@ export default function Features() {
 
   return (
     <div className="container mx-auto max-w-[1344px]">
-      <div className="px-5 py-16 flex flex-col gap-10 sm:pb-28 md:pb-36 lg:px-10">
+      <div className="px-5 py-16 flex flex-col gap-10 sm:pb-28 sm:px-10 md:pb-36">
         {/* Head Content */}
         <div className="text-center flex flex-col items-center">
           <Subtitle style="mb-2">360° CUSTOMIZABLE</Subtitle>
@@ -65,7 +65,7 @@ export default function Features() {
         </div>
 
         {/* Feature Items */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {dataFeatures?.map(feature => (
             <FeatureItem key={feature.id} feature={feature}/>
           ))}
