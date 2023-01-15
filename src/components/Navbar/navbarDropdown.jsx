@@ -26,7 +26,7 @@ export default function NavbarDropdown({ isOpen }) {
         <div className="flex flex-col gap-8">
           <a href="#">
             <p className="underline text-black-100 py-3.5 border border-black-100">
-            [60px]  Login
+              Login
             </p>
           </a>
           <a href="#">
