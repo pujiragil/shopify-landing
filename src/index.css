@@ -78,7 +78,7 @@ button {
 
 /* Testimonial */
 .testimonial-button {
-  @apply h-12 w-12 bg-primary-100 rounded-full border border-primary-100 flex items-center justify-center transition-all duration-200 ease-in disabled:border-black-400 disabled:bg-transparent;
+  @apply h-10 w-10 bg-primary-100 rounded-full border border-primary-100 flex items-center justify-center transition-all duration-200 ease-in disabled:border-black-400 disabled:bg-transparent;
 }
 
 .testimonial-button.prev:disabled img {
