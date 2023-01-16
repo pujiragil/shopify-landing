@@ -8,7 +8,7 @@ export default function Blog() {
       <div className="px-5 py-20 flex flex-col gap-[50px] sm:px-10">
         {/* Head Content */}
         <div className="flex flex-col gap-8 md:flex-row md:justify-between md:items-end">
-          <div className="flex flex-col gap-[18px]">
+          <div className="flex flex-col gap-[18px] md:w-8/12 lg:w-auto">
             <SubHead>Read our blog</SubHead>
             <Paragraph>We give actionable tips, strategies, and techniques to grow your business.</Paragraph>
           </div>
