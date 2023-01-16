@@ -16,7 +16,7 @@ export default function Testimonial() {
   return (
     <div className="bg-tertiary-300">
       <div className="container mx-auto max-w-[1344px]">
-        <div className="px-5 pt-10 pb-[52px]">
+        <div className="px-5 pt-10 pb-[52px] sm:px-10">
           <Swiper
             modules={[Navigation]}
             navigation={{
@@ -30,14 +30,14 @@ export default function Testimonial() {
             className="relative"
           >
             <SwiperSlide>
-              <div className="flex flex-col gap-[50px] items-center">
+              <div className="flex flex-col gap-[50px] items-center md:flex-row md:items-end lg:gap-44 lg:items-center">
                 <img
-                  className="w-8/12"
+                  className="w-[300px] md:w-8/12 lg:w-2/5"
                   src="/testimonial.png"
                   alt="testimonial"
                 />
-                <div className="flex flex-col">
-                  <SubHead style="mb-[18px] w-10/12">
+                <div className="flex flex-col sm:w-10/12">
+                  <SubHead style="mb-[18px] w-9/12 md:w-full">
                     What Our Customers Say
                   </SubHead>
                   <Paragraph style="mb-9">
@@ -56,14 +56,14 @@ export default function Testimonial() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex flex-col gap-[50px] items-center">
+              <div className="flex flex-col gap-[50px] items-center md:flex-row md:items-end lg:gap-44 lg:items-center">
                 <img
-                  className="w-8/12"
+                  className="w-[300px] md:w-8/12 lg:w-2/5"
                   src="/testimonial.png"
                   alt="testimonial"
                 />
-                <div className="flex flex-col">
-                  <SubHead style="mb-[18px] w-10/12">
+                <div className="flex flex-col sm:w-10/12">
+                  <SubHead style="mb-[18px] w-9/12 md:w-full">
                     What Our Customers Say
                   </SubHead>
                   <Paragraph style="mb-9">
@@ -81,7 +81,7 @@ export default function Testimonial() {
                 </div>
               </div>
             </SwiperSlide>
-            <div className="absolute bottom-0 right-0 z-10 bg-tertiary-300 flex items-center gap-4 pt-5 pl-5">
+            <div className="absolute bottom-0 right-0 sm:right-10 z-10 flex items-center gap-6">
               <button
                 className="testimonial-button prev"
                 ref={navigationPrevRef}
