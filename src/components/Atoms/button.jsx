@@ -12,10 +12,10 @@ export default function MainButton({ children, primary }) {
   );
 }
 
-export function Button({ children, style }) {
+export function Button({ children, style, buttonStyle }) {
   return (
     <button
-      className={`w-fit border border-primary-100 py-3.5 px-6 text-primary-100 font-body font-medium hover:bg-primary-100 hover:text-white transition-all duration-200 ease-in`}
+      className={`${buttonStyle ? buttonStyle : "bg-transparent text-primary-100 hover:bg-primary-100 hover:text-white"} w-fit border border-primary-100 py-3.5 px-6 font-body font-medium transition-all duration-200 ease-in ${style}`}
     >
       {children}
     </button>
