@@ -29,6 +29,9 @@ module.exports = {
       fontFamily: {
         "head": ["Plus Jakarta Sans", "sans-serif"],
         "body": ["DM Sans", "sans-serif"]
+      },
+      opacity: {
+        "15": ".15"
       }
     },
   },
