@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Blog from "./components/Blog";
 import Card from "./components/Card";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
@@ -12,6 +13,7 @@ export default function App() {
       <Banner />
       <Card />
       <Testimonial />
+      <Blog />
     </>
   );
 }
