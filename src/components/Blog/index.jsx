@@ -7,7 +7,7 @@ export default function Blog() {
     <div className="container mx-auto max-w-[1344px]">
       <div className="px-5 py-20 flex flex-col gap-[50px] sm:px-10">
         {/* Head Content */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 md:flex-row md:justify-between md:items-end">
           <div className="flex flex-col gap-[18px]">
             <SubHead>Read our blog</SubHead>
             <Paragraph>We give actionable tips, strategies, and techniques to grow your business.</Paragraph>
@@ -34,7 +34,7 @@ export default function Blog() {
               <img className="w-full h-auto object-cover hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" src="/blog-2.png" alt="thumbnail" />
             </div>
             <h3 className="text-[26px] font-medium text-black-100">Ecommerce Hosting: What to Look for in a Host</h3>
-            <a className="underline text-black-100" href="#">Read More</a>
+            <a className="underline text-black-100 w-fit" href="#">Read More</a>
           </section>
         </div>
       </div>
