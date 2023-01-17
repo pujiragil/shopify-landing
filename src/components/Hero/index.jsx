@@ -1,9 +1,53 @@
+import { animate, motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 import MainButton from "../Atoms/button";
 
 export default function Hero() {
+  const priceRef = useRef(null);
+
+  useEffect(() => {
+    const controls = animate(0, 218, {
+      duration: 1.2,
+      onUpdate(value) {
+        priceRef.current.textContent = `$${value.toFixed()}`;
+      },
+    });
+
+    return () => controls.stop();
+  }, []);
+
+  const containerImage = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, staggerChildren: 0.1, delayChildren: 0.1 },
+    },
+    hidden: { opacity: 0, x: 200 },
+  };
+
+  const chairContainer = {
+    visible: {
+      scale: 1,
+      y: 0,
+      x: 0,
+      transition: { duration: 0.8 },
+    },
+    hidden: { scale: 0.65, y: -70, x: -35 },
+  };
+
+  const chartContainer = {
+    visible: {
+      x: 0,
+      transition: { duration: 0.5 },
+    },
+    hidden: {
+      x: -100,
+    },
+  };
+
   return (
     <div className="container mx-auto max-w-[1344px]">
-      <div className="flex flex-col gap-[44px] p-5 py-6  min-h-screen h-auto justify-center md:p-0 lg:px-10 lg:pt-10 lg:pb-20 lg:min-h-fit lg:items-center lg:flex-row lg:justify-between">
+      <div className="flex flex-col gap-[44px] p-5 py-6  min-h-screen h-auto justify-center md:p-0 lg:px-10 lg:pt-10 lg:pb-20 lg:min-h-fit lg:items-center lg:flex-row lg:justify-between lg:gap-5">
         <div className="flex flex-col items-center lg:items-start gap-8 lg:w-full lg:gap-[34px]">
           <section className="flex flex-col gap-5 sm:items-center text-center lg:text-left lg:gap-6 lg:items-start">
             <h1 className="text-[42px] leading-[52px] sm:w-4/5 md:text-5xl md:w-4/5 font-bold font-head text-primary-100 lg:text-6xl lg:leading-[70px]">
@@ -19,7 +63,12 @@ export default function Hero() {
             <MainButton primary={false}>shop demo</MainButton>
           </div>
         </div>
-        <div className="flex items-center justify-center lg:w-full">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerImage}
+          className="flex items-center justify-center lg:w-full"
+        >
           <div className="relative w-fit">
             {/* main card */}
             <img
@@ -29,7 +78,10 @@ export default function Hero() {
             />
 
             {/* chair card */}
-            <div className="absolute top-[43%] right-7 flex flex-col items-center gap-1.5 p-2 rounded chair-card bg-white text-[5.48px] font-body text-black-400 w-[98px] sm:w-[150px] sm:text-[10px] sm:gap-2.5 sm:right-11 md:w-[200px] md:gap-3 md:text-xs md:p-4 md:rounded-md md:right-14">
+            <motion.div
+              variants={chairContainer}
+              className="absolute top-[43%] right-7 flex flex-col items-center gap-1.5 p-2 rounded chair-card bg-white text-[5.48px] font-body text-black-400 w-[98px] sm:w-[150px] sm:text-[10px] sm:gap-2.5 sm:right-11 md:w-[200px] md:gap-3 md:text-xs md:p-4 md:rounded-md md:right-14 lg:w-[180px] lg:gap-2"
+            >
               <p>Your Store</p>
               <img
                 className="w-16 h-auto object-cover sm:w-24 md:w-[133px]"
@@ -43,16 +95,19 @@ export default function Hero() {
               <button className="text-[#064A4A] bg-[#C7EBE8] rounded-full py-1 w-full sm:py-1.5 md:py-2">
                 Buy Now
               </button>
-            </div>
+            </motion.div>
 
             {/* total sales */}
-            <div className="absolute top-[28%] left-1 border-[0.5px] border-[#E2E2E2] rounded sales-card bg-white flex flex-col gap-2 font-body p-2 w-[96px] sm:w-[148px] sm:gap-3 sm:p-2.5 md:w-[196px] md:gap-4 md:border md:p-3.5">
+            <motion.div
+              variants={chartContainer}
+              className="absolute top-[28%] left-1 border-[0.5px] border-[#E2E2E2] rounded sales-card bg-white flex flex-col gap-2 font-body p-2 w-[96px] sm:w-[148px] sm:gap-3 sm:p-2.5 md:w-[196px] md:gap-4 md:border md:p-3.5"
+            >
               <div className="flex flex-col gap-0.5">
                 <h5 className="text-[#515151] text-[5.48px] font-medium sm:text-[8px] md:text-xs">
                   TOTAL SALES
                 </h5>
                 <div className="w-full flex items-end justify-between">
-                  <h4 className="text-xs text-[#064A4A] font-bold sm:text-lg md:text-2xl">
+                  <h4 ref={priceRef} className="text-xs text-[#064A4A] font-bold sm:text-lg md:text-2xl">
                     $218
                   </h4>
                   <img
@@ -66,9 +121,9 @@ export default function Hero() {
                 <p>6 total orders</p>
                 <p>View report {">"}</p>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
