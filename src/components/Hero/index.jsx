@@ -1,9 +1,10 @@
-import { animate, motion } from "framer-motion";
+import { animate, motion, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import MainButton from "../Atoms/button";
 
 export default function Hero() {
   const priceRef = useRef(null);
+  const isInView = useInView(priceRef);
 
   useEffect(() => {
     const controls = animate(0, 218, {
@@ -14,7 +15,7 @@ export default function Hero() {
     });
 
     return () => controls.stop();
-  }, []);
+  }, [isInView]);
 
   const containerImage = {
     visible: {
@@ -107,7 +108,10 @@ export default function Hero() {
                   TOTAL SALES
                 </h5>
                 <div className="w-full flex items-end justify-between">
-                  <h4 ref={priceRef} className="text-xs text-[#064A4A] font-bold sm:text-lg md:text-2xl">
+                  <h4
+                    ref={priceRef}
+                    className="text-xs text-[#064A4A] font-bold sm:text-lg md:text-2xl"
+                  >
                     $218
                   </h4>
                   <img
