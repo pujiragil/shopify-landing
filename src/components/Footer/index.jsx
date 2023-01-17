@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="bg-primary-300">
       {/* Contact */}
-      <div className="border-b border-white/15">
+      <div className="border-b border-white/15 relative overflow-hidden">
         <div className="container mx-auto max-w-[1344px]">
           <section className="px-5 py-10 flex flex-col items-center text-center sm:px-10">
             <SubHead color="text-white" style="mb-[18px] sm:w-9/12 md:w-9/12 lg:w-6/12">
@@ -23,6 +23,10 @@ export default function Footer() {
             <MainButton style="w-full sm:w-9/12 sm:w-fit lg:w-fit">CONTACT US</MainButton>
           </section>
         </div>
+
+        {/* Eclipse */}
+        <img className="hidden lg:block absolute top-1/4 -left-28" src="/eclipse-1.svg" alt="eclipse" />
+        <img className="hidden lg:block absolute top-[20%] -right-24" src="/eclipse-2.svg" alt="eclipse" />
       </div>
       {/* Footer */}
       <footer className="container mx-auto max-w-[1344px]">
