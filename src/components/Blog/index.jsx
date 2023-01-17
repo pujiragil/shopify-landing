@@ -21,7 +21,7 @@ export default function Blog() {
         </div>
 
         {/* Blog Items */}
-        <div className="grid gap-8 font-body md:grid-cols-2 lg:gap-12">
+        <div className="grid gap-8 font-body md:grid-cols-2 lg:grid-cols-3">
           <section className="flex flex-col gap-6">
             <div className="overflow-hidden">
               <img className="w-full h-auto object-cover hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" src="/blog-1.png" alt="thumbnail" />
@@ -35,6 +35,13 @@ export default function Blog() {
             </div>
             <h3 className="text-[26px] font-medium text-black-100">Ecommerce Hosting: What to Look for in a Host</h3>
             <a className="underline text-black-100 w-fit" href="#">Read More</a>
+          </section>
+          <section className="hidden lg:flex flex-col gap-6">
+            <div className="overflow-hidden">
+              <img className="w-full h-auto object-cover hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" src="/blog-1.png" alt="thumbnail" />
+            </div>
+            <h3 className="text-[26px] font-medium text-black-100">Improve your business ecommerce management</h3>
+            <a className="underline text-black-100" href="#">Read More</a>
           </section>
         </div>
       </div>
