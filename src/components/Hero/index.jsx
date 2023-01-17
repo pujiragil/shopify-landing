@@ -93,7 +93,7 @@ export default function Hero() {
                 <p>Modern Sofa</p>
                 <p className="text-[#515151] font-medium">$124.60</p>
               </div>
-              <button className="text-[#064A4A] bg-[#C7EBE8] rounded-full py-1 w-full sm:py-1.5 md:py-2">
+              <button className="text-[#064A4A] bg-[#C7EBE8] hover:bg-primary-200 transition-all duration-200 ease-in rounded-full py-1 w-full sm:py-1.5 md:py-2">
                 Buy Now
               </button>
             </motion.div>
