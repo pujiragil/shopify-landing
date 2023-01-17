@@ -20,7 +20,7 @@ export default function Footer() {
               Don’t want to deal with technical stuff? Let us fire up Uvodo for
               you, so you can spend your time selling right away.
             </Paragraph>
-            <MainButton style="w-full sm:w-9/12 sm:w-fit lg:w-fit">CONTACT US</MainButton>
+            <MainButton style="w-full sm:w-9/12 sm:w-fit lg:w-fit hover:bg-primary-300 hover:border-white hover:text-white transition-all duration-200 ease-in">CONTACT US</MainButton>
           </section>
         </div>
 
