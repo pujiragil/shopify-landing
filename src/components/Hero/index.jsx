@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
         <motion.div
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           variants={containerImage}
           className="flex items-center justify-center lg:w-full"
         >
