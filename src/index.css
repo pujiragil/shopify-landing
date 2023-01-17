@@ -93,3 +93,7 @@ button {
 .footer-link {
   @apply hover:text-white transition-all duration-200 ease-in;
 }
+
+.footer-icon {
+  @apply w-8 h-auto object-cover opacity-70 hover:opacity-100 transition-all duration-200 ease-in;
+}
