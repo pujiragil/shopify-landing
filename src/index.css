@@ -88,3 +88,8 @@ button {
 .testimonial-button.next:disabled img {
   content: url("/arrow-right-disabled.svg");
 }
+
+/* Footer */
+.footer-link {
+  @apply hover:text-white transition-all duration-200 ease-in;
+}
