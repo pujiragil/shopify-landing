@@ -42,41 +42,41 @@ export default function Footer() {
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Features</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a href="#">Find a Patner</a>
-                <a href="#">Become a Patner</a>
-                <a href="#">Affiliates</a>
-                <a href="#">Patner Offers</a>
-                <a href="#">Store Examples</a>
+                <a className="footer-link" href="#">Find a Patner</a>
+                <a className="footer-link" href="#">Become a Patner</a>
+                <a className="footer-link" href="#">Affiliates</a>
+                <a className="footer-link" href="#">Patner Offers</a>
+                <a className="footer-link" href="#">Store Examples</a>
               </div>
             </div>
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Company</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a href="#">Leaders</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Press</a>
-                <a href="#">Awards</a>
+                <a className="footer-link" href="#">Leaders</a>
+                <a className="footer-link" href="#">About Us</a>
+                <a className="footer-link" href="#">Careers</a>
+                <a className="footer-link" href="#">Press</a>
+                <a className="footer-link" href="#">Awards</a>
               </div>
             </div>
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Resources</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a href="#">Overview</a>
-                <a href="#">Articles</a>
-                <a href="#">Webinars</a>
-                <a href="#">Events</a>
-                <a href="#">Ecommerce</a>
+                <a className="footer-link" href="#">Overview</a>
+                <a className="footer-link" href="#">Articles</a>
+                <a className="footer-link" href="#">Webinars</a>
+                <a className="footer-link" href="#">Events</a>
+                <a className="footer-link" href="#">Ecommerce</a>
               </div>
             </div>
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Get Help</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a href="#">Shopify Company</a>
-                <a href="#">Knowledge Base</a>
-                <a href="#">Videos Contact</a>
-                <a href="#">Tech Support</a>
-                <a href="#">API Documentation</a>
+                <a className="footer-link" href="#">Shopify Company</a>
+                <a className="footer-link" href="#">Knowledge Base</a>
+                <a className="footer-link" href="#">Videos Contact</a>
+                <a className="footer-link" href="#">Tech Support</a>
+                <a className="footer-link" href="#">API Documentation</a>
               </div>
             </div>
           </div>
