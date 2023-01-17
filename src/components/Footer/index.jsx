@@ -84,28 +84,28 @@ export default function Footer() {
             <div className="flex items-center justify-center gap-4 mb-4 order-2">
               <a href="https://instagram.com/ragilsg_164" target="_blank">
                 <img
-                  className="w-8 h-auto object-cover"
+                  className="footer-icon"
                   src="/instagram.svg"
                   alt="instagram"
                 />
               </a>
               <a href="https://github.com/pujiragil" target="_blank">
                 <img
-                  className="w-8 h-auto object-cover"
+                  className="footer-icon"
                   src="/github.svg"
                   alt="github"
                 />
               </a>
               <a href="https://t.me/Ragilsg" target="_blank">
                 <img
-                  className="w-8 h-auto object-cover"
+                  className="footer-icon"
                   src="/telegram.svg"
                   alt="telegram"
                 />
               </a>
               <a href="https://linkedin.com/in/pujiragil" target="_blank">
                 <img
-                  className="w-8 h-auto object-cover"
+                  className="footer-icon"
                   src="/linkedin.svg"
                   alt="linkedin"
                 />
