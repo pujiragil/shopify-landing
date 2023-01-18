@@ -60,7 +60,7 @@ export default function Features() {
       opacity: 1,
       transition: { duration: 1, delayChildren: 0.2, staggerChildren: 0.2 },
     },
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
   };
 
   return (
