@@ -1,15 +1,34 @@
+import { motion } from "framer-motion";
 import MainButton from "../Atoms/button";
 import Paragraph from "../Atoms/paragraph";
 import SubHead from "../Atoms/subhead";
 
 export default function Footer() {
+  const footerContent = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 100 },
+  };
+
+  const footerImage = {
+    visible: { y: 0, transition: { duration: 1 } },
+    hidden: { y: -100 },
+  };
+
   return (
     <div className="bg-primary-300">
       {/* Contact */}
       <div className="border-b border-white/15 relative overflow-hidden">
         <div className="container mx-auto max-w-[1344px]">
-          <section className="px-5 py-10 flex flex-col items-center text-center sm:px-10">
-            <SubHead color="text-white" style="mb-[18px] sm:w-9/12 md:w-9/12 lg:w-6/12">
+          <motion.section
+            initial="hidden"
+            whileInView="visible"
+            variants={footerContent}
+            className="px-5 py-10 flex flex-col items-center text-center sm:px-10"
+          >
+            <SubHead
+              color="text-white"
+              style="mb-[18px] sm:w-9/12 md:w-9/12 lg:w-6/12"
+            >
               We can take care of the installation
             </SubHead>
             <Paragraph
@@ -20,13 +39,29 @@ export default function Footer() {
               Don’t want to deal with technical stuff? Let us fire up Uvodo for
               you, so you can spend your time selling right away.
             </Paragraph>
-            <MainButton style="w-full sm:w-9/12 sm:w-fit lg:w-fit hover:bg-primary-300 hover:border-white hover:text-white transition-all duration-200 ease-in">CONTACT US</MainButton>
-          </section>
+            <MainButton style="w-full sm:w-9/12 sm:w-fit lg:w-fit hover:bg-primary-300 hover:border-white hover:text-white transition-all duration-200 ease-in">
+              CONTACT US
+            </MainButton>
+          </motion.section>
         </div>
 
         {/* Eclipse */}
-        <img className="hidden lg:block absolute top-1/4 -left-28" src="/eclipse-1.svg" alt="eclipse" />
-        <img className="hidden lg:block absolute top-[20%] -right-24" src="/eclipse-2.svg" alt="eclipse" />
+        <motion.img
+          initial="hidden"
+          whileInView="visible"
+          variants={footerImage}
+          className="hidden lg:block absolute top-1/4 -left-28"
+          src="/eclipse-1.svg"
+          alt="eclipse"
+        />
+        <motion.img
+          initial="hidden"
+          whileInView="visible"
+          variants={footerImage}
+          className="hidden lg:block absolute top-[20%] -right-24"
+          src="/eclipse-2.svg"
+          alt="eclipse"
+        />
       </div>
       {/* Footer */}
       <footer className="container mx-auto max-w-[1344px]">
@@ -42,41 +77,81 @@ export default function Footer() {
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Features</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a className="footer-link" href="#">Find a Patner</a>
-                <a className="footer-link" href="#">Become a Patner</a>
-                <a className="footer-link" href="#">Affiliates</a>
-                <a className="footer-link" href="#">Patner Offers</a>
-                <a className="footer-link" href="#">Store Examples</a>
+                <a className="footer-link" href="#">
+                  Find a Patner
+                </a>
+                <a className="footer-link" href="#">
+                  Become a Patner
+                </a>
+                <a className="footer-link" href="#">
+                  Affiliates
+                </a>
+                <a className="footer-link" href="#">
+                  Patner Offers
+                </a>
+                <a className="footer-link" href="#">
+                  Store Examples
+                </a>
               </div>
             </div>
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Company</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a className="footer-link" href="#">Leaders</a>
-                <a className="footer-link" href="#">About Us</a>
-                <a className="footer-link" href="#">Careers</a>
-                <a className="footer-link" href="#">Press</a>
-                <a className="footer-link" href="#">Awards</a>
+                <a className="footer-link" href="#">
+                  Leaders
+                </a>
+                <a className="footer-link" href="#">
+                  About Us
+                </a>
+                <a className="footer-link" href="#">
+                  Careers
+                </a>
+                <a className="footer-link" href="#">
+                  Press
+                </a>
+                <a className="footer-link" href="#">
+                  Awards
+                </a>
               </div>
             </div>
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Resources</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a className="footer-link" href="#">Overview</a>
-                <a className="footer-link" href="#">Articles</a>
-                <a className="footer-link" href="#">Webinars</a>
-                <a className="footer-link" href="#">Events</a>
-                <a className="footer-link" href="#">Ecommerce</a>
+                <a className="footer-link" href="#">
+                  Overview
+                </a>
+                <a className="footer-link" href="#">
+                  Articles
+                </a>
+                <a className="footer-link" href="#">
+                  Webinars
+                </a>
+                <a className="footer-link" href="#">
+                  Events
+                </a>
+                <a className="footer-link" href="#">
+                  Ecommerce
+                </a>
               </div>
             </div>
             <div>
               <h6 className="mb-5 font-medium text-lg text-white">Get Help</h6>
               <div className="flex flex-col gap-4 text-white/70 text-sm">
-                <a className="footer-link" href="#">Shopify Company</a>
-                <a className="footer-link" href="#">Knowledge Base</a>
-                <a className="footer-link" href="#">Videos Contact</a>
-                <a className="footer-link" href="#">Tech Support</a>
-                <a className="footer-link" href="#">API Documentation</a>
+                <a className="footer-link" href="#">
+                  Shopify Company
+                </a>
+                <a className="footer-link" href="#">
+                  Knowledge Base
+                </a>
+                <a className="footer-link" href="#">
+                  Videos Contact
+                </a>
+                <a className="footer-link" href="#">
+                  Tech Support
+                </a>
+                <a className="footer-link" href="#">
+                  API Documentation
+                </a>
               </div>
             </div>
           </div>
@@ -90,11 +165,7 @@ export default function Footer() {
                 />
               </a>
               <a href="https://github.com/pujiragil" target="_blank">
-                <img
-                  className="footer-icon"
-                  src="/github.svg"
-                  alt="github"
-                />
+                <img className="footer-icon" src="/github.svg" alt="github" />
               </a>
               <a href="https://t.me/Ragilsg" target="_blank">
                 <img
