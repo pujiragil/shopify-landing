@@ -1,20 +1,22 @@
 import Paragraph from "../Atoms/paragraph";
 import { motion } from "framer-motion";
 
-export default function FeatureItem({ feature }) {
+export default function FeatureItem({ feature, i }) {
   const featureItem = {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: .7, },
+      transition: { duration: .7, delay: i * 0.05 },
     },
     hidden: { opacity: 0, x: 100 },
   };
 
   return (
     <motion.section
+      initial="hidden"
+      whileInView="visible"
       variants={featureItem}
-      viewport={{ amount: 0.01 }}
+      viewport={{ amount: 0 }}
       className="flex flex-col border border-black-200 feature-item"
     >
       <div className="px-5 py-2.5 flex items-center justify-between border-b border-black-200">

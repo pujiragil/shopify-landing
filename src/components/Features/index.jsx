@@ -55,14 +55,6 @@ export default function Features() {
     hidden: { y: -100, opacity: 0 },
   };
 
-  const featuresContainer = {
-    visible: {
-      opacity: 1,
-      transition: { duration: 1, delayChildren: 0.2, staggerChildren: 0.2 },
-    },
-    hidden: { opacity: 1 },
-  };
-
   return (
     <div className="container mx-auto max-w-[1344px]">
       <div className="px-5 py-16 flex flex-col gap-10 sm:pb-28 sm:px-10 md:pb-36">
@@ -89,16 +81,11 @@ export default function Features() {
         </motion.div>
 
         {/* Feature Items */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={featuresContainer}
-          className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 overflow-hidden"
-        >
-          {dataFeatures?.map((feature) => (
-            <FeatureItem key={feature.id} feature={feature} />
+        <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 overflow-hidden">
+          {dataFeatures?.map((feature, index) => (
+            <FeatureItem key={feature.id} feature={feature} i={index} />
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
