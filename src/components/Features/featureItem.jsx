@@ -13,8 +13,6 @@ export default function FeatureItem({ feature }) {
 
   return (
     <motion.section
-      initial="hidden"
-      whileInView="visible"
       variants={featureItem}
       viewport={{ amount: 0.01 }}
       className="flex flex-col border border-black-200 feature-item"

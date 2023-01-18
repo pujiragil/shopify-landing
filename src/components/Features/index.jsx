@@ -58,7 +58,7 @@ export default function Features() {
   const featuresContainer = {
     visible: {
       opacity: 1,
-      transition: { duration: 1, delayChildren: 0.2, staggerChildren: 0.5 },
+      transition: { duration: 1, delayChildren: 0.2, staggerChildren: 0.2 },
     },
     hidden: { opacity: 0 },
   };
