@@ -16,7 +16,7 @@ export default function FeatureItem({ feature, i }) {
       initial="hidden"
       whileInView="visible"
       variants={featureItem}
-      viewport={{ amount: 0 }}
+      viewport={{ amount: 0, once: true }}
       className="flex flex-col border border-black-200 feature-item"
     >
       <div className="px-5 py-2.5 flex items-center justify-between border-b border-black-200">
