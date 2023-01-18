@@ -2,6 +2,7 @@ import SubHead from "../Atoms/subhead";
 import Subtitle from "../Atoms/subtitle";
 import Paragraph from "../Atoms/paragraph";
 import FeatureItem from "./featureItem";
+import { motion } from "framer-motion";
 
 export default function Features() {
   const dataFeatures = [
@@ -49,27 +50,42 @@ export default function Features() {
     },
   ];
 
+  const content = {
+    visible: { y: 0, opacity: 1, transition: { duration: 1 } },
+    hidden: { y: -100, opacity: 0 },
+  };
+
   return (
     <div className="container mx-auto max-w-[1344px]">
       <div className="px-5 py-16 flex flex-col gap-10 sm:pb-28 sm:px-10 md:pb-36">
         {/* Head Content */}
-        <div className="text-center flex flex-col items-center">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={content}
+          className="text-center flex flex-col items-center"
+        >
           <Subtitle style="mb-2">360° CUSTOMIZABLE</Subtitle>
           <SubHead style="mb-[18px] sm:w-8/12 md:w-9/12 lg:w-7/12">
             Have full control over your online store
           </SubHead>
-          <Paragraph fontSize="text-sm" color="text-black-400" style="sm:w-3/5 md:w-7/12 lg:w-1/3">
+          <Paragraph
+            fontSize="text-sm"
+            color="text-black-400"
+            style="sm:w-3/5 md:w-7/12 lg:w-1/3"
+          >
             Take total control of your eCommerce business by owning the source
             code and data that drive it.
           </Paragraph>
-        </div>
+        </motion.div>
 
         {/* Feature Items */}
-        <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {dataFeatures?.map(feature => (
-            <FeatureItem key={feature.id} feature={feature}/>
+        <motion.div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {dataFeatures?.map((feature) => (
+            <FeatureItem key={feature.id} feature={feature} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
