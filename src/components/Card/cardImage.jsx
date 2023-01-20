@@ -1,7 +1,12 @@
 export default function CardImage() {
   return (
     <div className="bg-white px-3.5 py-[18px] md:px-6 md:py-9 flex flex-col gap-[18px] shadow-[0_14px_60px_rgba(182, 161, 110, 0.19)] font-head">
-      <div className="flex items-center justify-between pb-4 md:pb-8 border-b-[0.5px] md:border-b border-[#9C9C9C]"></div>
+      <div className="flex items-center justify-between pb-4 md:pb-8 border-b-[0.5px] md:border-b border-[#9C9C9C]">
+        <h4 className="text-xs text-primary-100 font-medium">Shopify Bill Payment</h4>
+        <span className="text-primary-100 text-[7px] font-medium bg-[#EBF7F7] w-4 h-4 flex items-center justify-center block rounded-full">
+          3
+        </span>
+      </div>
       <div className="grid gap-3.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2.5">

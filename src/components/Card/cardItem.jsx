@@ -3,6 +3,7 @@ import { Button } from "../Atoms/button";
 import Paragraph from "../Atoms/paragraph";
 import SubHead from "../Atoms/subhead";
 import Subtitle from "../Atoms/subtitle";
+import CardImage from "./cardImage";
 
 export default function CardItem({
   subtitle,
@@ -43,14 +44,15 @@ export default function CardItem({
           primary ? "md:order-1" : "md:order-2"
         } sm:w-2/3 md:w-full lg:w-4/5`}
       >
-        <motion.img
+        {/* <motion.img
           initial="hidden"
           whileInView="visible"
           variants={cardImage}
           className="w-full h-auto object-cover"
           src={img}
           alt="card"
-        />
+        /> */}
+        <CardImage/>
       </div>
     </div>
   );
