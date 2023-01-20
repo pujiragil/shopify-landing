@@ -1,0 +1,46 @@
+export default function CardImage() {
+  return (
+    <div className="bg-white px-3.5 py-[18px] md:px-6 md:py-9 flex flex-col gap-[18px] shadow-[0_14px_60px_rgba(182, 161, 110, 0.19)] font-head">
+      <div className="flex items-center justify-between pb-4 md:pb-8 border-b-[0.5px] md:border-b border-[#9C9C9C]"></div>
+      <div className="grid gap-3.5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div>
+              <img className="w-7 h-auto object-cover rounded-full" src="/profile-1.png" alt="profile" />
+            </div>
+            <div>
+              <h5 className="text-[10px] text-black-100 font-medium">Jenny Wilson</h5>
+              <p className="text-[#9C9C9C] text-[7px]">(629) 555-0129</p>
+            </div>
+          </div>
+          <p className="text-[10px] text-black-100 font-medium">$739.65</p>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div>
+              <img className="w-7 h-auto object-cover rounded-full" src="/profile-1.png" alt="profile" />
+            </div>
+            <div>
+              <h5 className="text-[10px] text-black-100 font-medium">Terry Robar</h5>
+              <p className="text-[#9C9C9C] text-[7px]">(612) 675-8829</p>
+            </div>
+          </div>
+          <p className="text-[10px] text-black-100 font-medium">$475.22</p>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div>
+              <img className="w-7 h-auto object-cover rounded-full" src="/profile-1.png" alt="profile" />
+            </div>
+            <div>
+              <h5 className="text-[10px] text-black-100 font-medium">Pritom Rana</h5>
+              <p className="text-[#9C9C9C] text-[7px]">(129) 325-0021</p>
+            </div>
+          </div>
+          <p className="text-[10px] text-black-100 font-medium">$739.65</p>
+        </div>
+      </div>
+      <button className="py-2.5 bg-primary-100/10 w-full text-primary-100 font-body font-medium text-[8px]">Add Manual</button>
+    </div>
+  );
+}
