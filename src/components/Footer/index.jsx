@@ -49,6 +49,10 @@ export default function Footer() {
         <motion.img
           initial="hidden"
           whileInView="visible"
+          animate={{
+            rotate: 360,
+            transition: { duration: 15, repeat: "Infinity", ease: "easeInOut" },
+          }}
           variants={footerImage}
           className="hidden lg:block absolute top-1/4 -left-28"
           src="/eclipse-1.svg"
@@ -57,6 +61,10 @@ export default function Footer() {
         <motion.img
           initial="hidden"
           whileInView="visible"
+          animate={{
+            rotate: 360,
+            transition: { duration: 30, repeat: "Infinity", ease: "easeInOut" },
+          }}
           variants={footerImage}
           className="hidden lg:block absolute top-[20%] -right-24"
           src="/eclipse-2.svg"
