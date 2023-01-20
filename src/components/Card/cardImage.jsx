@@ -70,6 +70,16 @@ export default function CardImage() {
           Add Manual
         </button>
       </div>
+
+      {/* mini modal */}
+      <div className="absolute w-[130px] z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white shadow shadow-[rgba(150, 126, 67, 0.08)] rounded-lg flex flex-col gap-5 font-head text-center">
+        <div>
+          <h5 className="text-[10px] font-medium text-primary-100 mb-1.5">Bill Amount</h5>
+          <p className="text-black-300 text-[8px]">A fair way to divide bills</p>
+        </div>
+        <h4 className="font-medium text-[18px] text-primary-100">$739.65</h4>
+        <button className="bg-[#FFBC9F] text-[8px] text-primary-100 py-2 w-full">Quick Pay</button>
+      </div>
     </div>
   );
 }
