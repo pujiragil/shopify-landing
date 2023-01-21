@@ -1,12 +1,12 @@
 export default function CardImage() {
   return (
-    <div className="p-5 relative z-10 after:bg-tertiary-200 after:w-full after:h-[85%] after:absolute after:inset-0 after:z-0">
-      <div className="relative z-10 bg-white px-3.5 py-[18px] md:px-6 md:py-9 flex flex-col gap-[18px] shadow-sm shadow-[rgba(182, 161, 110, 0.19)] font-head">
+    <div className="w-11/12 lg:w-11/12 p-5 relative z-10 after:bg-tertiary-200 after:w-full after:h-[85%] after:absolute after:inset-0 after:z-0 md:p-10">
+      <div className="relative z-10 bg-white px-3.5 py-[18px] md:px-6 md:py-9 flex flex-col gap-[18px] shadow shadow-[rgba(182, 161, 110, 0.19)] font-head lg:gap-[34px] lg:shadow-lg">
         <div className="flex items-center justify-between pb-4 md:pb-8 border-b-[0.5px] md:border-b border-[#9C9C9C]">
-          <h4 className="text-xs text-primary-100 font-medium">
+          <h4 className="text-xs text-primary-100 font-medium lg:text-2xl">
             Shopify Bill Payment
           </h4>
-          <span className="text-primary-100 text-[7px] font-medium bg-[#EBF7F7] w-4 h-4 flex items-center justify-center block rounded-full">
+          <span className="text-primary-100 text-[7px] font-medium bg-[#EBF7F7] w-4 h-4 flex items-center justify-center block rounded-full lg:w-8 lg:h-8 lg:text-base">
             3
           </span>
         </div>
@@ -15,70 +15,70 @@ export default function CardImage() {
             <div className="flex items-center gap-2.5">
               <div>
                 <img
-                  className="w-7 h-auto object-cover rounded-full"
+                  className="w-7 h-auto object-cover rounded-full lg:w-14"
                   src="/profile-1.png"
                   alt="profile"
                 />
               </div>
               <div>
-                <h5 className="text-[10px] text-black-100 font-medium">
+                <h5 className="text-[10px] text-black-100 font-medium lg:text-lg lg:mb-0.5">
                   Jenny Wilson
                 </h5>
-                <p className="text-[#9C9C9C] text-[7px]">(629) 555-0129</p>
+                <p className="text-[#9C9C9C] text-[7px] lg:text-sm">(629) 555-0129</p>
               </div>
             </div>
-            <p className="text-[10px] text-black-100 font-medium">$739.65</p>
+            <p className="text-[10px] text-black-100 font-medium lg:text-lg">$739.65</p>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <div>
                 <img
-                  className="w-7 h-auto object-cover rounded-full"
+                  className="w-7 h-auto object-cover rounded-full lg:w-14"
                   src="/profile-2.png"
                   alt="profile"
                 />
               </div>
               <div>
-                <h5 className="text-[10px] text-black-100 font-medium">
+                <h5 className="text-[10px] text-black-100 font-medium lg:text-lg lg:mb-0.5">
                   Terry Robar
                 </h5>
-                <p className="text-[#9C9C9C] text-[7px]">(612) 675-8829</p>
+                <p className="text-[#9C9C9C] text-[7px] lg:text-sm">(612) 675-8829</p>
               </div>
             </div>
-            <p className="text-[10px] text-black-100 font-medium">$475.22</p>
+            <p className="text-[10px] text-black-100 font-medium lg:text-lg">$475.22</p>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <div>
                 <img
-                  className="w-7 h-auto object-cover rounded-full"
+                  className="w-7 h-auto object-cover rounded-full lg:w-14"
                   src="/profile-3.png"
                   alt="profile"
                 />
               </div>
               <div>
-                <h5 className="text-[10px] text-black-100 font-medium">
+                <h5 className="text-[10px] text-black-100 font-medium lg:text-lg lg:mb-0.5">
                   Pritom Rana
                 </h5>
-                <p className="text-[#9C9C9C] text-[7px]">(129) 325-0021</p>
+                <p className="text-[#9C9C9C] text-[7px] lg:text-sm">(129) 325-0021</p>
               </div>
             </div>
-            <p className="text-[10px] text-black-100 font-medium">$739.65</p>
+            <p className="text-[10px] text-black-100 font-medium lg:text-lg">$739.65</p>
           </div>
         </div>
-        <button className="py-2.5 bg-primary-100/10 w-full text-primary-100 font-body font-medium text-[8px]">
+        <button className="py-2.5 bg-primary-100/10 w-full text-primary-100 font-body font-medium text-[8px] lg:py-[22px] lg:text-base">
           Add Manual
         </button>
       </div>
 
       {/* mini modal */}
-      <div className="absolute w-[130px] z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white shadow shadow-[rgba(150, 126, 67, 0.08)] rounded-lg flex flex-col gap-5 font-head text-center">
+      <div className="absolute w-[130px] z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white shadow shadow-[rgba(150, 126, 67, 0.08)] rounded-lg flex flex-col gap-5 font-head text-center lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:shadow-lg lg:-bottom-14 lg:-right-8">
         <div>
-          <h5 className="text-[10px] font-medium text-primary-100 mb-1.5">Bill Amount</h5>
-          <p className="text-black-300 text-[8px]">A fair way to divide bills</p>
+          <h5 className="text-[10px] font-medium text-primary-100 mb-1.5 lg:text-lg lg:mb-2">Bill Amount</h5>
+          <p className="text-black-300 text-[8px] lg:text-base">A fair way to divide bills</p>
         </div>
-        <h4 className="font-medium text-[18px] text-primary-100">$739.65</h4>
-        <button className="bg-[#FFBC9F] text-[8px] text-primary-100 py-2 w-full">Quick Pay</button>
+        <h4 className="font-medium text-[18px] text-primary-100 lg:text-4xl">$739.65</h4>
+        <button className="bg-[#FFBC9F] text-[8px] text-primary-100 py-2 w-full lg:text-base lg:py-4">Quick Pay</button>
       </div>
     </div>
   );
