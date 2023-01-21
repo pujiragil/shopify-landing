@@ -72,7 +72,7 @@ export default function CardImage() {
       </div>
 
       {/* mini modal */}
-      <div className="absolute w-2/5 z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white shadow shadow-[rgba(150, 126, 67, 0.08)] rounded-lg flex flex-col gap-5 font-head text-center sm:gap-8 sm:-right-4 md:w-3/5 ms:shadow-md md:max-w-[200px] lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:shadow-lg lg:-bottom-14 lg:-right-8">
+      <div className="absolute w-2/5 z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white shadow shadow-[rgba(150, 126, 67, 0.08)] rounded-lg flex flex-col gap-5 font-head text-center sm:gap-8 sm:-right-4 md:w-3/5 ms:shadow-md md:max-w-[200px] lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:shadow-lg lg:-bottom-10 lg:-right-8 lg:max-w-none">
         <div>
           <h5 className="text-[10px] font-medium text-primary-100 mb-1.5 sm:text-base lg:text-lg lg:mb-2">Bill Amount</h5>
           <p className="text-black-300 text-[8px] sm:text-xs lg:text-base">A fair way to divide bills</p>
