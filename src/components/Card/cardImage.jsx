@@ -105,5 +105,47 @@ export default function CardImage({ primary }) {
     );
   }
 
-  return <h1>secondary</h1>
+  return (
+    <div className="w-11/12 max-w-[380px] sm:max-w-[480px] md:w-full md:max-w-none lg:w-11/12 bg-secondary-200 p-5 flex flex-col gap-2.5 font-body text-primary-100 font-medium">
+      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md">
+        <div className="flex items-center gap-2">
+          <img className="w-3.5 h-auto object-cover" src="/earn-1.svg" alt="earn" />
+          <p className="text-[9px]">Total Income</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <p className="text-[9px]">$ 21,746,02</p>
+          <img className="w-7 h-auto object-cover" src="/earn-3.svg" alt="earn" />
+        </div>
+      </div>
+      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md">
+        <div className="flex items-center gap-2">
+          <img className="w-3.5 h-auto object-cover" src="/earn-2.svg" alt="earn" />
+          <p className="text-[9px]">Worst Selling</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <p className="text-[9px]">$ 5,369</p>
+          <img className="w-7 h-auto object-cover" src="/earn-4.svg" alt="earn" />
+        </div>
+      </div>
+      <div className="bg-white p-4 pb-5 flex flex-col gap-7 rounded-md">
+        <div className="flex justify-between items-center">
+          <p className="text-[9px]">Total Growth</p>
+          <img className="w-2.5 h-auto object-cover" src="/dot.svg" alt="dot" />
+        </div>
+        <div className="flex justify-between gap-6 items-center">
+          <img className="w-full h-auto object-cover" src="/chart.png" alt="chart" />
+          <div className="flex flex-col gap-2.5">
+            <div>
+              <div className="w-2.5 h-0.5 rounded bg-[#FFA882]"></div>
+              <p className="text-[9px] font-bold">25,3K</p>
+            </div>
+            <div>
+              <div className="w-2.5 h-0.5 rounded bg-[#80D9AD]"></div>
+              <p className="text-[9px] font-bold">+120</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
