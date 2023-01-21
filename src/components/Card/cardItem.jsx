@@ -52,7 +52,7 @@ export default function CardItem({
           src={img}
           alt="card"
         /> */}
-        <CardImage/>
+        <CardImage primary={primary}/>
       </div>
     </div>
   );

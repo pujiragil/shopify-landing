@@ -3,7 +3,7 @@ import CardItem from "./cardItem";
 export default function Card() {
   return (
     <div className="container mx-auto max-w-[1344px]">
-      <div className="flex flex-col px-5 py-20 gap-20 sm:px-10 overflow-hidden">
+      <div className="flex flex-col px-5 py-20 gap-20 sm:px-10 overflow-hidden lg:gap-40">
         <CardItem
           subtitle="PWA READY STOREFRONT"
           subhead="Own everything forever with a single payment."
