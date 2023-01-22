@@ -3,8 +3,21 @@ import CardProfileList from "./cardProfileList";
 
 export default function CardImage({ primary }) {
   const primaryContainer = {
-    visible: { y: 0, transition: { duration: .5, delayChildren: .5 } },
+    visible: {
+      y: 0,
+      transition: { duration: 0.5, delayChildren: 0.5, staggerChildren: 0.1 },
+    },
     hidden: { y: 100 },
+  };
+
+  const miniModal = {
+    visible: {
+      y: 0,
+      transition: { duration: 0.5, delay: 0.5 },
+    },
+    hidden: {
+      y: 100,
+    },
   };
 
   const fakeProfiles = [
@@ -48,7 +61,7 @@ export default function CardImage({ primary }) {
               3
             </span>
           </div>
-          <div className="grid gap-3.5">
+          <div className="grid gap-3.5 overflow-hidden">
             {fakeProfiles.map((profile) => (
               <CardProfileList key={profile.id} profile={profile} />
             ))}
@@ -59,7 +72,12 @@ export default function CardImage({ primary }) {
         </motion.div>
 
         {/* mini modal */}
-        <div className="absolute w-2/5 z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white rounded-lg flex flex-col gap-5 font-head text-center sm:gap-8 sm:-right-4 md:w-3/5 md:max-w-[200px] lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:-bottom-10 lg:-right-8 lg:max-w-none mini-modal">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={miniModal}
+          className="absolute w-2/5 z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white rounded-lg flex flex-col gap-5 font-head text-center sm:gap-8 sm:-right-4 md:w-3/5 md:max-w-[200px] lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:-bottom-10 lg:-right-8 lg:max-w-none mini-modal"
+        >
           <div>
             <h5 className="text-[10px] font-medium text-primary-100 mb-1.5 sm:text-base lg:text-lg lg:mb-2">
               Bill Amount
@@ -74,7 +92,7 @@ export default function CardImage({ primary }) {
           <button className="bg-[#FFBC9F] text-[8px] text-primary-100 py-2 w-full sm:text-xs sm:py-2.5 lg:text-base lg:py-4">
             Quick Pay
           </button>
-        </div>
+        </motion.div>
       </div>
     );
   }
