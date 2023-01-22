@@ -132,7 +132,7 @@ export default function CardImage({ primary }) {
           <p className="text-[9px] lg:text-base">Total Growth</p>
           <img className="w-2.5 h-auto object-cover lg:w-5" src="/dot.svg" alt="dot" />
         </div>
-        <div className="flex justify-between gap-6 items-center">
+        <div className="flex gap-6 items-center">
           <img className="w-full h-auto object-cover" src="/chart.png" alt="chart" />
           <div className="w-auto flex flex-col gap-2.5">
             <div>
