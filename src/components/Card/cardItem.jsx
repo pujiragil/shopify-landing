@@ -9,17 +9,11 @@ export default function CardItem({
   subtitle,
   subhead,
   paragraph,
-  img,
   primary,
 }) {
   const cardContent = {
     visible: { x: 0, opacity: 1, transition: { duration: 1 } },
     hidden: { x: 100, opacity: 0 },
-  };
-
-  const cardImage = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, scale: 0.5 },
   };
 
   return (
@@ -44,14 +38,6 @@ export default function CardItem({
           primary ? "md:order-1" : "md:order-2"
         } w-full flex justify-center`}
       >
-        {/* <motion.img
-          initial="hidden"
-          whileInView="visible"
-          variants={cardImage}
-          className="w-full h-auto object-cover"
-          src={img}
-          alt="card"
-        /> */}
         <CardImage primary={primary}/>
       </div>
     </div>
