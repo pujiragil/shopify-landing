@@ -2,7 +2,7 @@ export default function CardImage({ primary }) {
   if (primary) {
     return (
       <div className="w-11/12 max-w-[380px] sm:max-w-[480px] md:w-full md:max-w-none lg:w-11/12 p-5 relative z-10 after:bg-tertiary-200 after:w-full after:h-[85%] after:absolute after:inset-0 after:z-0 sm:p-8 md:p-4 lg:p-10">
-        <div className="relative z-10 bg-white px-3.5 py-[18px] sm:px-5 sm: py-7 md:px-6 md:py-9 flex flex-col gap-[18px] shadow shadow-[rgba(182, 161, 110, 0.19)] font-head lg:gap-[34px] md:shadow-md lg:shadow-lg">
+        <div className="relative z-10 bg-white px-3.5 py-[18px] sm:px-5 sm: py-7 md:px-6 md:py-9 flex flex-col gap-[18px] font-head lg:gap-[34px] primary-card">
           <div className="flex items-center justify-between pb-4 md:pb-8 border-b-[0.5px] md:border-b border-[#9C9C9C]">
             <h4 className="text-xs text-primary-100 font-medium sm:text-base lg:text-2xl">
               Shopify Bill Payment
@@ -85,7 +85,7 @@ export default function CardImage({ primary }) {
         </div>
 
         {/* mini modal */}
-        <div className="absolute w-2/5 z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white shadow shadow-[rgba(150, 126, 67, 0.08)] rounded-lg flex flex-col gap-5 font-head text-center sm:gap-8 sm:-right-4 md:w-3/5 ms:shadow-md md:max-w-[200px] lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:shadow-lg lg:-bottom-10 lg:-right-8 lg:max-w-none">
+        <div className="absolute w-2/5 z-10 -bottom-8 -right-2 px-3.5 py-4 bg-white rounded-lg flex flex-col gap-5 font-head text-center sm:gap-8 sm:-right-4 md:w-3/5 md:max-w-[200px] lg:px-6 lg:py-8 lg:w-1/2 lg:gap-10 lg:-bottom-10 lg:-right-8 lg:max-w-none mini-modal">
           <div>
             <h5 className="text-[10px] font-medium text-primary-100 mb-1.5 sm:text-base lg:text-lg lg:mb-2">
               Bill Amount
@@ -107,7 +107,7 @@ export default function CardImage({ primary }) {
 
   return (
     <div className="w-11/12 max-w-[380px] sm:max-w-[480px] md:w-full md:max-w-none lg:w-11/12 bg-secondary-200 p-5 flex flex-col gap-2.5 font-body text-primary-100 font-medium lg:p-10">
-      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md lg:py-4 lg:px-5 lg:rounded-xl">
+      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md shadow md:shadow-md lg:py-4 lg:px-5 lg:rounded-xl">
         <div className="flex items-center gap-2 lg:gap-3.5">
           <img className="w-3.5 h-auto object-cover lg:w-6" src="/earn-1.svg" alt="earn" />
           <p className="text-[9px] lg:text-base">Total Income</p>
@@ -117,7 +117,7 @@ export default function CardImage({ primary }) {
           <img className="w-7 h-auto object-cover lg:w-[50px]" src="/earn-3.svg" alt="earn" />
         </div>
       </div>
-      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md lg:py-4 lg:px-5 lg:rounded-xl">
+      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md shadow md:shadow-md lg:py-4 lg:px-5 lg:rounded-xl">
         <div className="flex items-center gap-2 lg:gap-3.5">
           <img className="w-3.5 h-auto object-cover lg:w-6" src="/earn-2.svg" alt="earn" />
           <p className="text-[9px] lg:text-base">Worst Selling</p>
@@ -127,7 +127,7 @@ export default function CardImage({ primary }) {
           <img className="w-7 h-auto object-cover lg:w-[50px]" src="/earn-4.svg" alt="earn" />
         </div>
       </div>
-      <div className="bg-white p-4 pb-5 flex flex-col gap-7 rounded-md lg:p-7 lg:pb-9 lg:rounded-xl">
+      <div className="bg-white p-4 pb-5 flex flex-col gap-7 rounded-md shadow md:shadow-md lg:p-7 lg:pb-9 lg:rounded-xl">
         <div className="flex justify-between items-center">
           <p className="text-[9px] lg:text-base">Total Growth</p>
           <img className="w-2.5 h-auto object-cover lg:w-5" src="/dot.svg" alt="dot" />
