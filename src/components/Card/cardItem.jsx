@@ -3,7 +3,7 @@ import { Button } from "../Atoms/button";
 import Paragraph from "../Atoms/paragraph";
 import SubHead from "../Atoms/subhead";
 import Subtitle from "../Atoms/subtitle";
-import CardImage from "./cardImage";
+import CardImage from "./cardImages";
 
 export default function CardItem({
   subtitle,
