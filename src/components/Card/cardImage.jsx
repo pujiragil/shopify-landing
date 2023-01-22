@@ -106,42 +106,42 @@ export default function CardImage({ primary }) {
   }
 
   return (
-    <div className="w-11/12 max-w-[380px] sm:max-w-[480px] md:w-full md:max-w-none lg:w-11/12 bg-secondary-200 p-5 flex flex-col gap-2.5 font-body text-primary-100 font-medium lg:p-10">
-      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md shadow md:shadow-md lg:py-4 lg:px-5 lg:rounded-xl">
+    <div className="w-11/12 max-w-[380px] sm:max-w-[480px] md:w-full md:max-w-none lg:w-11/12 bg-secondary-200 p-5 flex flex-col gap-2.5 font-body text-primary-100 font-medium sm:p-8">
+      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md shadow sm:py-3.5 sm:px-4 md:shadow-md lg:py-4 lg:px-5 lg:rounded-xl">
         <div className="flex items-center gap-2 lg:gap-3.5">
-          <img className="w-3.5 h-auto object-cover lg:w-6" src="/earn-1.svg" alt="earn" />
-          <p className="text-[9px] lg:text-base">Total Income</p>
+          <img className="w-3.5 h-auto object-cover sm:w-5 lg:w-6" src="/earn-1.svg" alt="earn" />
+          <p className="text-[9px] sm:text-sm lg:text-base">Total Income</p>
         </div>
         <div className="flex items-center gap-2 lg:gap-3.5">
-          <p className="text-[9px] lg:text-base">$ 21,746,02</p>
-          <img className="w-7 h-auto object-cover lg:w-[50px]" src="/earn-3.svg" alt="earn" />
-        </div>
-      </div>
-      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md shadow md:shadow-md lg:py-4 lg:px-5 lg:rounded-xl">
-        <div className="flex items-center gap-2 lg:gap-3.5">
-          <img className="w-3.5 h-auto object-cover lg:w-6" src="/earn-2.svg" alt="earn" />
-          <p className="text-[9px] lg:text-base">Worst Selling</p>
-        </div>
-        <div className="flex items-center gap-2 lg:gap-3.5">
-          <p className="text-[9px] lg:text-base">$ 5,369</p>
-          <img className="w-7 h-auto object-cover lg:w-[50px]" src="/earn-4.svg" alt="earn" />
+          <p className="text-[9px] sm:text-sm lg:text-base">$ 21,746,02</p>
+          <img className="w-7 h-auto object-cover sm:w-11 lg:w-[50px]" src="/earn-3.svg" alt="earn" />
         </div>
       </div>
-      <div className="bg-white p-4 pb-5 flex flex-col gap-7 rounded-md shadow md:shadow-md lg:p-7 lg:pb-9 lg:rounded-xl">
+      <div className="bg-white py-2 px-2.5 flex justify-between items-center rounded-md shadow sm:py-3.5 sm:px-4 md:shadow-md lg:py-4 lg:px-5 lg:rounded-xl">
+        <div className="flex items-center gap-2 lg:gap-3.5">
+          <img className="w-3.5 h-auto object-cover sm:w-5 lg:w-6" src="/earn-2.svg" alt="earn" />
+          <p className="text-[9px] sm:text-sm lg:text-base">Worst Selling</p>
+        </div>
+        <div className="flex items-center gap-2 lg:gap-3.5">
+          <p className="text-[9px] sm:text-sm lg:text-base">$ 5,369</p>
+          <img className="w-7 h-auto object-cover sm:w-11 lg:w-[50px]" src="/earn-4.svg" alt="earn" />
+        </div>
+      </div>
+      <div className="bg-white p-4 pb-5 flex flex-col gap-7 rounded-md shadow sm:p-6 sm:pb-7 md:shadow-md lg:p-7 lg:pb-9 lg:rounded-xl">
         <div className="flex justify-between items-center">
-          <p className="text-[9px] lg:text-base">Total Growth</p>
-          <img className="w-2.5 h-auto object-cover lg:w-5" src="/dot.svg" alt="dot" />
+          <p className="text-[9px] sm:text-sm lg:text-base">Total Growth</p>
+          <img className="w-2.5 h-auto object-cover sm:w-4 lg:w-5" src="/dot.svg" alt="dot" />
         </div>
         <div className="flex gap-6 items-center">
           <img className="w-full h-auto object-cover" src="/chart.png" alt="chart" />
           <div className="w-auto flex flex-col gap-2.5">
             <div>
               <div className="w-2.5 h-0.5 rounded bg-[#FFA882] lg:w-5 lg:h-1"></div>
-              <p className="text-[9px] font-bold lg:text-base">25,3K</p>
+              <p className="text-[9px] font-bold sm:text-sm lg:text-base">25,3K</p>
             </div>
             <div>
               <div className="w-2.5 h-0.5 rounded bg-[#80D9AD] lg:w-5 lg:h-1"></div>
-              <p className="text-[9px] font-bold lg:text-base">+120</p>
+              <p className="text-[9px] font-bold sm:text-sm lg:text-base">+120</p>
             </div>
           </div>
         </div>
