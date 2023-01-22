@@ -160,12 +160,14 @@ export function SecondaryCard() {
           />
         </div>
         <div className="flex gap-6 items-center">
-          <img
-            className="w-full h-auto object-cover"
-            src="/chart.png"
-            alt="chart"
-          />
-          <div className="w-auto flex flex-col gap-2.5">
+          <div className="w-full">
+            <img
+              className="w-full h-auto object-cover"
+              src="/chart.png"
+              alt="chart"
+            />
+          </div>
+          <div className="w-fit flex flex-col gap-2.5">
             <div>
               <div className="w-2.5 h-0.5 rounded bg-[#FFA882] lg:w-5 lg:h-1"></div>
               <p className="text-[9px] font-bold sm:text-sm lg:text-base">
