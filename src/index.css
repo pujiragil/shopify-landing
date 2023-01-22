@@ -76,6 +76,23 @@ button {
   @apply bg-secondary-200;
 }
 
+/* Card */
+.primary-card {
+  box-shadow: 0px 7.28827px 31.2354px rgba(182, 161, 110, 0.19);
+
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 14px 60px rgba(182, 161, 110, 0.19);
+  }
+}
+
+.mini-modal {
+  box-shadow: -5.2059px 2.08236px 36.4413px rgba(150, 126, 67, 0.08);
+
+  @media screen and (min-width: 768px) {
+    box-shadow: -10px 4px 70px rgba(150, 126, 67, 0.08);
+  }
+}
+
 /* Testimonial */
 .testimonial-button {
   @apply h-10 w-10 bg-primary-100 rounded-full border border-primary-100 flex items-center justify-center transition-all duration-200 ease-in disabled:border-black-400 disabled:bg-transparent;
